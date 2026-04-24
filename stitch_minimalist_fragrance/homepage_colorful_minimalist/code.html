@@ -1,0 +1,224 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;1,300&amp;family=Manrope:wght@300;400;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#2c2824",
+                        "on-secondary-container": "#5d4a1b",
+                        "surface-container-low": "#f8f5f1",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f8f5f1",
+                        "primary": "#3d3832",
+                        "on-surface": "#2c2824",
+                        "on-tertiary-container": "#9b9c98",
+                        "secondary-fixed": "#e9c349",
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#6e6a64",
+                        "on-secondary-fixed": "#241a00",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#4a453e",
+                        "secondary-container": "#f1e4bc",
+                        "inverse-primary": "#d1c7bc",
+                        "primary-container": "#f1eee9",
+                        "on-tertiary-fixed": "#1a1c19",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#ebe6df",
+                        "secondary": "#a68933",
+                        "on-primary-fixed-variant": "#4a453e",
+                        "tertiary-container": "#323431",
+                        "surface-container-high": "#f1eee9",
+                        "surface-container": "#f5f2ed",
+                        "background": "#faf9f6",
+                        "surface-container-highest": "#ebe6df",
+                        "inverse-surface": "#32302d",
+                        "surface-dim": "#e2ded9",
+                        "tertiary-fixed-dim": "#c6c7c2",
+                        "secondary-fixed-dim": "#e9c349",
+                        "primary-fixed-dim": "#d1c7bc",
+                        "outline": "#8b867e",
+                        "on-background": "#2c2824",
+                        "on-secondary-fixed-variant": "#5d4a1b",
+                        "primary-fixed": "#f1eee9",
+                        "on-error": "#ffffff",
+                        "tertiary": "#1d1f1c",
+                        "surface-bright": "#faf9f6",
+                        "surface-tint": "#a68933",
+                        "tertiary-fixed": "#e3e3de",
+                        "outline-variant": "#d1ccc4",
+                        "on-tertiary-fixed-variant": "#454744",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#faf9f6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0rem",
+                        "lg": "0rem",
+                        "xl": "0rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "stack-md": "32px",
+                        "stack-sm": "12px",
+                        "margin-desktop": "64px",
+                        "stack-lg": "80px",
+                        "gutter": "24px",
+                        "container-max": "1440px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Manrope"],
+                        "headline-xl": ["Noto Serif"],
+                        "label-sm": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "headline-md": ["Noto Serif"],
+                        "headline-lg": ["Noto Serif"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                        "headline-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.12em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "300"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "letterSpacing": "0em", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #faf9f6;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface" data-mode="connect">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-16 py-8 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 transition-opacity duration-300">
+<div class="flex items-center gap-12">
+<a class="font-serif text-sm tracking-[0.2em] uppercase text-primary border-b border-primary pb-1" href="#" style="">SHOP</a>
+<a class="font-serif text-sm tracking-[0.2em] uppercase text-on-surface-variant hover:text-primary transition-colors duration-500" href="#" style="">JOURNAL</a>
+<a class="font-serif text-sm tracking-[0.2em] uppercase text-on-surface-variant hover:text-primary transition-colors duration-500" href="#" style="">BESPOKE</a>
+</div>
+<div class="text-2xl font-light tracking-[0.4em] text-primary" style="">L'ESSENCE</div>
+<div class="flex items-center gap-8">
+<button class="cursor-pointer opacity-100 hover:text-secondary transition-colors text-primary" style="">
+<span class="material-symbols-outlined" data-icon="shopping_bag" style="">shopping_bag</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen w-full overflow-hidden flex items-center justify-center">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover sepia-[0.15] brightness-90 saturate-[0.8]" data-alt="Cinematic close-up of a minimalist glass perfume bottle sitting on a stone surface with soft morning light and artistic shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdvV2d4w6qP6HtF1tSDXGRXROgL_nKQj456XwFnO2TTBu8-ZU5IjPEqNsDu9G4w5bz1mFTOZnNo5hHvylBa6sVZeMi87fB_60qf5tY2b18s5m7SFfNCoDAfYmUANr7Rfnz1bF2v6y8eXR5nobe6OyFcxe7kr7DqkYPrrUlPLYolHrCVF9HVbHrPEn3l4rb764h4wtexl-bKZG7l3xEXkYOPlUZlYlbzF7_pX7vHLdopSKuDrK7sHTPoH6VOKUHRtMK2TV7WNI5b4M" style="">
+<div class="absolute inset-0 bg-primary/20"></div>
+</div>
+<div class="relative z-10 text-center px-margin-desktop">
+<h1 class="font-headline-xl text-white mb-stack-md max-w-3xl leading-tight" style="">THE SILENT LANGUAGE OF EXEPTIONAL SCENT</h1>
+<p class="font-body-lg text-white/90 mb-stack-lg tracking-[0.3em] uppercase text-xs" style="">PREMIUM Collection</p>
+<button class="bg-white/90 text-primary px-12 py-5 font-label-sm tracking-[0.25em] hover:bg-secondary hover:text-white transition-all duration-500" style="">
+                    EXPLORE THE COLLECTION</button>
+</div>
+</section>
+<!-- Product Highlight -->
+<section class="py-stack-lg px-16 max-w-[1440px] mx-auto">
+<div class="grid grid-cols-12 gap-gutter items-end mb-stack-lg">
+<div class="col-span-12 md:col-span-5">
+<span class="font-label-sm text-secondary tracking-[0.3em] uppercase block mb-4" style="">Philosophy</span>
+<h2 class="font-headline-lg text-primary mb-stack-sm" style="">Curation of Elements</h2>
+<p class="font-body-md text-on-surface-variant max-w-md" style="">Each fragrance is a deliberate composition of raw botanical essences, harvested with respect for the lunar cycles and the earth's rhythm.</p>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-gutter">
+<!-- Product Card 1 -->
+<div class="col-span-12 md:col-span-4 group cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden mb-stack-sm bg-surface-container-high relative">
+<img class="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:scale-105 transition-transform duration-1000" data-alt="Minimalist product shot of a dark glass bottle on a neutral background with sharp architectural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbF228K79nss3saKGmTHjHEBmocgnXm5xtU8V_Dl22Flz8D6h6samL_m65F4wiFgBamE_PXC3xPHAZZMLZ5ZU2vflG99EM2HwP5Kvmyuyczp8ePWzJ3TJhTZoSy3anAN9OY3J-pTwKllWcYzTdTxP7B6Ilt_gJulZ0LBfu0PiV_WT7pKwAGnyeRkSRc3rDLGrO42XDVkRHhaXKjnjXgm4yK9kO9PlxNTUYuHRoy3sczm9HSJ0BO0oOZtwjzxCMKE7RCyWjPZqxUDo" style="">
+</div>
+<div class="text-center">
+<span class="font-label-sm text-secondary tracking-[0.2em] uppercase mb-2 block" style=""><br></span>
+<h3 class="font-headline-md text-primary" style="">NOIR ÉPICÉ</h3>
+<p class="font-body-md text-on-surface-variant mt-2 font-light" style="">$240.00</p>
+</div>
+</div>
+<!-- Product Card 2 (Offset Large) -->
+<div class="col-span-12 md:col-span-8 group cursor-pointer relative md:-top-20">
+<div class="aspect-[16/9] overflow-hidden mb-stack-sm bg-surface-container-high relative">
+<img class="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:scale-105 transition-transform duration-1000" data-alt="Artistic composition of dried botanicals and a glass flask on a textured off-white surface with dramatic chiaroscuro" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTiQJXojwj87OdL_Fl1DNZsIWRoD7oVnXqg6V5l5cH_N6XL3UX9lgcMCyLY3125Fw8qgS7wf3ESyCCdGqEkUPcjRx7Zfm9p7jV1Xpd91-tOqWK3cpbVXk6nYu_Vm7XZcpRnbIIz8HhSnxz83BGwEZREBCg7bM0iQtQoTFpbzLYKXBHB13HuzF1t1-HyjLAFaDC_r8nh7k8B0JPRRQO11R8_J91RpK_xnGbWL0aJjZcJRcHLL-dZWacMoXL2RXLCSj5FDrX34b_Huk" style="">
+</div>
+<div class="flex justify-between items-start">
+<div>
+<span class="font-label-sm text-secondary tracking-[0.2em] uppercase mb-2 block" style=""><br></span>
+<h3 class="font-headline-md text-primary" style=""><br></h3>
+</div>
+<p class="font-body-md text-on-surface-variant font-light" style="">$285.00</p>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="col-span-12 md:col-span-4 group cursor-pointer md:-mt-20">
+<div class="aspect-[3/4] overflow-hidden mb-stack-sm bg-surface-container-high relative">
+<img class="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:scale-105 transition-transform duration-1000" data-alt="Single tall perfume bottle standing against a light grey wall with a single thin branch shadow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVf2yPzQIO0x4KOzM_POs2JcaSLlY5eEdTweC9GAC685mSPC-KCKnGF_xT-eX8h_bMF3ylgmZlH_lLn9q7lfwZhkjn3jMcV_pJQa4XYQaSEHzRtDei-Edmcmm1VM7rSu4xLuSxrTiSVY6PN8najhmcoDI7AZhx9MWjANKljRPUrBEIjl7hutBniseX-wUQlZfhe8QMXV7tshUm8l9idR1Yim5pEN4iUGFHxlJN3FBoBbk1jP3_EOahjUUstfulY5TZr08bW9OaTO0" style="">
+</div>
+<div class="text-center">
+<span class="font-label-sm text-secondary tracking-[0.2em] uppercase mb-2 block" style=""><br></span>
+<h3 class="font-headline-md text-primary" style=""><br></h3>
+<p class="font-body-md text-on-surface-variant mt-2 font-light" style=""><br></p>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Story Section -->
+<section class="bg-[#f0ece4] py-stack-lg mt-stack-lg overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-16 grid grid-cols-12 gap-16 items-center">
+<div class="col-span-12 md:col-span-6">
+<div class="aspect-[4/5] relative">
+<img class="w-full h-full object-cover saturate-[0.7] brightness-[1.05] shadow-2xl" data-alt="Close up of artisan hands carefully handling raw ingredients in a laboratory with vintage equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt3KKVF7wV9J2p43DpItWNGN_XSN6V9RPuT5zS1SI22JFc7SdaGCZfMah6wI-JjW1buhKPVefKSfUuWPlZMSi1mMYORD13NyEm2lbZjNpkT6zEQq09QnlRNbDyeE8pAl3CUm6ognk7QfZD4iIQXRxujLQKZEx8ZbFp4fbNlEBSzgI68QVqKNUPgTx4Y9uGvDjkr7kB4UrkRYqu1x9cT9ca2CrejmyhvBnBWhNVatMXqK9Zvs-hXDJUZyEZjZm8NCm0tfjrcyBEUH8" style="">
+<div class="absolute -bottom-8 -right-8 w-64 h-64 border border-secondary/20 -z-10 bg-white/50"></div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-6 space-y-8">
+<span class="font-label-sm text-secondary tracking-[0.4em] uppercase" style="">JOURNAL — VOL. 12</span>
+<h2 class="font-headline-xl text-primary leading-tight" style="">The Alchemist’s Hand: Crafting Scent in the Grasse Highlands</h2>
+<p class="font-body-lg text-primary/80 italic border-l-2 border-secondary/30 pl-8 py-2" style="">"A perfume is not a product; it is a memory captured in a liquid state. We seek the precise moment when the jasmine flower yields its soul to the air."</p>
+<p class="font-body-md text-on-surface-variant" style="">Our latest exploration takes us to the forgotten valleys of the South of France, where the heritage of slow-distillation remains untouched by the hands of industry.</p>
+<a class="inline-block border-b border-secondary pb-2 font-label-sm tracking-[0.2em] text-primary hover:text-secondary transition-colors" href="#" style="">READ THE FULL STORY</a>
+</div>
+</div>
+</section>
+<!-- Newsletter / Minimal Interaction -->
+<section class="py-32 px-16 text-center max-w-4xl mx-auto">
+<h3 class="font-headline-lg text-primary mb-6 italic" style="">Join the L'Essence Circle</h3>
+<p class="font-body-md text-on-surface-variant mb-12 max-w-2xl mx-auto" style="">Receive early access to limited batch releases and editorial stories from our global expeditions.</p>
+<form class="flex flex-col md:flex-row gap-8 justify-center items-end">
+<div class="w-full md:w-96 border-b border-outline pb-2">
+<input class="w-full bg-transparent border-none focus:ring-0 font-label-sm text-primary placeholder-outline-variant/60 uppercase" placeholder="YOUR EMAIL ADDRESS" type="email">
+</div>
+<button class="font-label-sm tracking-[0.3em] text-secondary hover:text-primary uppercase transition-colors" type="submit" style="">SUBSCRIBE</button>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 px-16 flex flex-col md:flex-row justify-between items-center gap-8 bg-surface-container-high border-t border-outline-variant/20">
+<div class="text-xl font-light tracking-[0.4em] text-primary uppercase" style="">L'ESSENCE</div>
+<div class="flex flex-wrap justify-center gap-12">
+<a class="font-body-md text-[10px] tracking-[0.2em] uppercase text-on-surface-variant hover:text-primary underline underline-offset-8 decoration-secondary/30 transition-all duration-300" href="#" style="">PRIVACY</a>
+<a class="font-body-md text-[10px] tracking-[0.2em] uppercase text-on-surface-variant hover:text-primary underline underline-offset-8 decoration-secondary/30 transition-all duration-300" href="#" style="">TERMS</a>
+<a class="font-body-md text-[10px] tracking-[0.2em] uppercase text-on-surface-variant hover:text-primary underline underline-offset-8 decoration-secondary/30 transition-all duration-300" href="#" style="">Delivery<br></a>
+<a class="font-body-md text-[10px] tracking-[0.2em] uppercase text-on-surface-variant hover:text-primary underline underline-offset-8 decoration-secondary/30 transition-all duration-300" href="#" style="">CONTACT</a>
+</div>
+<div class="font-body-md text-[9px] tracking-[0.1em] uppercase text-on-surface-variant/70" style="">
+            © 2024 L'ESSENCE PARFUMS. ALL RIGHTS RESERVED.
+        </div>
+</footer>
+</body></html>
